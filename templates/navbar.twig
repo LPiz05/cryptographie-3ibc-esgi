@@ -74,6 +74,23 @@
 					<a class="nav-item nav-link" href="/BlowFish">BlowFish<span class="sr-only">(current)</span>
 					</a>
 				{% endif %}
+
+				{% if url is defined and url == "signup" %}
+					<a class="nav-item nav-link active" href="/signup">S'enregistrer<span class="sr-only">(current)</span>
+					</a>
+				{% else %}
+					<a class="nav-item nav-link" href="/signup">S'enregistrer<span class="sr-only">(current)</span>
+					</a>
+				{% endif %}
+
+				{% if url is defined and url == "signin" %}
+					<a class="nav-item nav-link active" href="/signin">Se connecter<span class="sr-only">(current)</span>
+					</a>
+				{% else %}
+					<a class="nav-item nav-link" href="/signin">Se connecter<span class="sr-only">(current)</span>
+					</a>
+				{% endif %}
+
 			</div>
 		</div>
 	</div>
